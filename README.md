@@ -168,7 +168,7 @@ The maximum length of the generated answer is set to 50.
 
 **Results**
 
-Question: What is Artificial Intelligence?
+Question: What is Artificial Intelligence?  
 question_tokens:  ['artificial', 'intelligence']
 question_indices:  [3813, 3757]
 
