@@ -37,7 +37,7 @@ Special tokens are added:
 1. vocab['\<pad\>'] for padding sequences to the same length
 2. vocab['\<start\>'] to initiate the sequence generation
 3. vocab['\<end\>'] to end the sequence generation
-4. token-to-ińdex conversion is done to the question tokens and answer tokens columns
+4. token-to-index conversion is done to the question tokens and answer tokens columns
 5. The max index used in the question and answer is used to set the vocab size
 
 **Model Training**
