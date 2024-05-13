@@ -55,7 +55,7 @@ The loss function used for this task is the Cross Entropy loss and Adam optimize
 The model was trained for 100 epochs on an NVIDIA RTX 3070 GPU for around 60 minutes.
 
 Training logs:
-Epoch [1/100], Loss: 8.846049308776855
+Epoch [1/100], Loss: 8.846049308776855  
 Epoch [2/100], Loss: 8.475971221923828
 Epoch [3/100], Loss: 8.066388130187988
 Epoch [4/100], Loss: 7.60778284072876
