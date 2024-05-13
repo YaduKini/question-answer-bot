@@ -34,7 +34,7 @@ The dataset is split into train and test sets following an 80:20 ratio for train
 
 Unique tokens are taken from the text and a mapping is created from token: index.
 Special tokens are added:
-1. vocab[<pad>] for padding sequences to the same length
+1. vocab[&ltpad&gt] for padding sequences to the same length
 2. vocab[<start>] to initiate the sequence generation
 3. vocab['<end>'] to end the sequence generation
 4. token-to-ińdex conversion is done to the question tokens and answer tokens columns
