@@ -2,7 +2,7 @@
 This repository contains the code for a Question-Answer (QA) bot using a deep learning approach to answer your queries on Artificial Intelligence. 
 
 
-Data set
+**Data set**
 
 The dataset consists of text from one or more Wikipedia pages on Artificial Intelligence. The text data from these HTML Wikipedia pages are scraped using the BeautifulSoup library for efficient parsing of text content. The text data is stored in a csv file under the 'answer' column.
 
