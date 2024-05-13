@@ -6,7 +6,7 @@ This repository contains the code for a Question-Answer (QA) bot using a deep le
 
 The dataset consists of text from one or more Wikipedia pages on Artificial Intelligence. The text data from these HTML Wikipedia pages are scraped using the BeautifulSoup library for efficient parsing of text content. The text data is stored in a csv file under the 'answer' column.
 
-Question Creator
+**Question Creator**
 
 Manually creating questions for enormous text data is a time-consuming process. So, in this project, the process of creating questions based on the text under the 'answer' column has been automated using a question creator script, which takes as input a csv file with the 'answer' column. I implement a keyword extractor script.
 
@@ -18,7 +18,7 @@ The algorithm for the keyword extractor is as follows:
 5. Create a question template using the most common question verbs and append this question template to the extracted keywords to get valid questions.
 6. Create a new column in the existing 
 
-Data Preprocessing
+**Data Preprocessing**
 
 The question-answer data is stored in a csv file called 'data.csv'. To make the text data suitable to be given as input to a deep learning model and also for better information processing, certain preprocessing steps are implemented on the text and are as follows:
 1. All the text is converted to lowercase letters to ensure uniformity in text processing
@@ -26,11 +26,11 @@ The question-answer data is stored in a csv file called 'data.csv'. To make the 
 3. The text data is tokenized into words using the word_tokenize library from nltk
 4. Stopwords are removed from the text
 
-Data split
+**Data split**
 
 The dataset is split into train and test sets following an 80:20 ratio for train:test respectively.
 
-Creating the vocabulary
+**Creating the vocabulary**
 
 Unique tokens are taken from the text and a mapping is created from token: index.
 Special tokens are added:
@@ -40,7 +40,7 @@ Special tokens are added:
 4. token-to-ińdex conversion is done to the question tokens and answer tokens columns
 5. The max index used in the question and answer is used to set the vocab size
 
-Model Training
+**Model Training**
 
 A sequence-to-sequence model using LSTM is used for generating the answers based on user query. The model architecture consists of an encoder and a decoder to generate answers.
 The hyperparameters used for the model are as follows:
@@ -156,13 +156,14 @@ Epoch [98/100], Loss: 1.252352237701416
 Epoch [99/100], Loss: 1.2088229656219482  
 Epoch [100/100], Loss: 1.1657863855361938  
 
-QA web service
+**QA web service**
 
 Flask is used to deploy the QA bot model as a web service.
 The user has to enter the desired question in the box provided to get an answer from the QA bot
 The maximum length of the generated answer is set to 50.
 
-Results:
+**Results**
+
 question_tokens:  ['artificial', 'intelligence']
 question_indices:  [3813, 3757]
 
